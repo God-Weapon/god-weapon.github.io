@@ -40,7 +40,7 @@
   <blockquote>
 
 <div class="Section1">
-<p class="MsoNormal"><font face="Tahoma"><span class="SpellE"><b><u><span style="font-size:14.0pt">EmulinkerSF</span></u></b></span><b><u><span style="font-size:14.0pt"> v0.58.7(04-26-2008) Manual</span></u></b><span style="font-size:14.0pt"> - By: <span class="SpellE">SupraFast</span></span></font></p>
+<p class="MsoNormal"><font face="Tahoma"><span class="SpellE"><b><u><span style="font-size:14.0pt">EmulinkerSF</span></u></b></span><b><u><span style="font-size:14.0pt"> v0.90.0+ (03-28-2021) Manual</span></u></b></span></font></p>
 <br>                     
 </font></p>
 <p class="MsoNormal"><font face="Tahoma"><b><u>Server Access Level Privileges</u></b></font></p>
@@ -89,6 +89,7 @@
   (SA)</span></u></b></font></p>
   <p class="MsoNormal"><font face="Tahoma"><span style="font-size:11.0pt">Includes (E), (M), and (A)</span></font></p>
   <p class="MsoNormal"><font face="Tahoma"><span style="font-size:11.0pt">Grant Temp Admin</span></font></p>
+  <p class="MsoNormal"><font face="Tahoma"><span style="font-size:11.0pt">Grant Temp Moderator</span></font></p>
   <p class="MsoNormal"><font face="Tahoma"><span style="font-size:11.0pt">Grant Temp Elevated</span></font></p>
   <p class="MsoNormal"><span style="font-size:11.0pt"><font face="Tahoma">Can use <span class="SpellE">EmulinkerSF</span>
   Admin Client</font><o:p></o:p></span></p>
@@ -318,6 +319,8 @@ Type Thresholds</span></font></p>
  <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
 	<font face="Tahoma"><span class="SpellE"><span style="font-size:11.0pt">Gamename</span></span><span style="font-size:11.0pt"> Length &gt;128 (crashes all traditional <span class="SpellE">kaillera</span> clients)</span></font></li>
  <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Tahoma"><span style="font-size:11.0pt">PM Length &gt; 320 (crashes all traditional <span class="SpellE">kaillera</span> clients)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
 	<font face="Tahoma"><span class="SpellE"><span style="font-size:11.0pt">Gameroom</span></span><span style="font-size:11.0pt"> Join Spamming</span></font></li>
  <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
 	<font face="Tahoma"><span style="font-size:11.0pt">Username Duplication</span></font></li>
@@ -336,13 +339,19 @@ Type Thresholds</span></font></p>
  <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
 	<font face="Tahoma"><span style="font-size:11.0pt">Casting Error when <span class="SpellE">gameID</span>
      becomes larger than 0x7FFF (crashes server)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Tahoma"><span style="font-size:11.0pt">Connection break when server get <span class="SpellE">last message ID 0xFFFF</span>
+     from client</span></font></li>
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Tahoma"><span style="font-size:11.0pt">Unlikely but possible connection break 
+due of loss or disorder packets</span></font></li>
 </ol>
 
 <p class="MsoNormal"><font face="Tahoma"><span style="font-size:11.0pt"><br>
 &nbsp;</span></font></p>
 
 <p class="MsoNormal" align="center" style="text-align:center"><b>
-<span style="font-size: 20.0pt; font-family: Tahoma">Emulinker Supraclient Chat/Gameroom 
+<span style="font-size: 20.0pt; font-family: Tahoma">EmulinkerSF Chat/Gameroom 
 Commands</span></b></p>
 <p class="MsoNormal" align="center" style="text-align:center"><b>
 <span style="font-family: Tahoma">&nbsp;&nbsp;</span></b></p>
@@ -380,7 +389,7 @@ Commands</span></b></p>
 		<p class="MsoNormal"><span style="font-family: Tahoma">/me &lt;message&gt;</span></p></td>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal"><span style="font-family: Tahoma">Allows the user 
-		to “emote” </span></p></td>
+		to “emote”.</span></p></td>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
@@ -392,7 +401,7 @@ Commands</span></b></p>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal"><span style="font-family: Tahoma">/msg &lt;User ID&gt;</span></p></td>
+		<p class="MsoNormal"><span style="font-family: Tahoma">/msg &lt;User ID&gt; /msgoff, /msgon</span></p></td>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal"><span style="font-family: Tahoma">Allows a user to 
 		send a private message to another user in the server.</span></p></td>
@@ -430,18 +439,6 @@ Commands</span></b></p>
 		<p class="MsoNormal"><span style="font-family: Tahoma">Allows a 
 		moderator to silence another user of equal or less status for 0-15 
 		minutes.</span></p></td>
-	</tr>
-	<tr>
-		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal" align="center" style="text-align:center">
-		<span style="font-family: Tahoma">Elevated Exclusive Commands (?)</span></p></td>
-	</tr>
-	<tr>
-		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal"><span style="font-family: Tahoma">/silence 0 – 5</span></p></td>
-		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal"><span style="font-family: Tahoma">Allows an 
-		Elevated user to silence users of equal or less status for 0-5 minutes.</span></p></td>
 	</tr>
 	<tr>
 		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
@@ -515,7 +512,15 @@ Commands</span></b></p>
 		&lt;User ID&gt;</span></p></td>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal"><span style="font-family: Tahoma">Allows a super 
-		admin to grant temporary elevated status to another user</span></p></td>
+		admin to grant temporary elevated status to another user.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Tahoma">/tempmoderator 
+		&lt;User ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Tahoma">Allows a super 
+		admin to grant temporary moderator status to another user.</span></p></td>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
@@ -528,7 +533,7 @@ Commands</span></b></p>
 	<tr>
 		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal" align="center" style="text-align:center">
-		<span style="font-family: Tahoma">Gameroom Commands</span></p></td>
+		<span style="font-family: Tahoma">Gameroom Owner Commands</span></p></td>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
@@ -582,8 +587,8 @@ Commands</span></b></p>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal"><span style="font-family: Tahoma">/p2pon, /p2poff</span></p></td>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal"><span style="font-family: Tahoma">Allows faking p2p 
-		during gamplay</span></p></td>
+		<p class="MsoNormal"><span style="font-family: Tahoma">Ignoring ALL server activity  
+		during gamplay. (Main chat and server messages will be disabled)</span></p></td>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
@@ -594,14 +599,21 @@ Commands</span></b></p>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal"><span style="font-family: Tahoma">/lagstat</span></p></td>
+		<p class="MsoNormal"><span style="font-family: Tahoma">/setconn</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Tahoma">Restricts the 
+		gameroom to the connection type the host is using.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Tahoma">/lagstat, /lagreset</span></p></td>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal"><span style="font-family: Tahoma">Shows the amount 
 		of lag spikes each user in the gameroom has.</span></p></td>
 	</tr>
 	<tr>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
-		<p class="MsoNormal"><span style="font-family: Tahoma">/swap &lt;# # # #&gt;</span></p></td>
+		<p class="MsoNormal"><span style="font-family: Tahoma">/swap &lt;####&gt;</span></p></td>
 		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
 		<p class="MsoNormal"><span style="font-family: Tahoma">Swaps the keys 
 		for each user in the gameroom.</span></p></td>
