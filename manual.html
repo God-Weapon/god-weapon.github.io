@@ -1,0 +1,648 @@
+﻿<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>God Weapon - EmulinkerSF Manual</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  <meta http-equiv="PRAGMA" content="NO-CACHE">
+ </head>
+ <body bgcolor="#FFFFFF">
+  <center>
+   &nbsp;<br>
+   <table class="title">
+    <tbody><tr>
+     <td align="center"><img src="./logo.png"></td>
+    </tr>
+   </tbody></table>
+   <table class="menu">
+    <tbody><tr>
+     <td width="10%">
+      <a href="./index.html">Home</a>
+     </td>
+     <td width="10%">
+      <a href="./faq.html">FAQ</a>
+     </td>
+     <td width="10%">
+      <a href="./manual.html">EmulinkerSF Manual</a>
+     </td>
+     <td width="10%">
+      <a href="./downloads.html">Downloads</a>
+     </td>
+     <td width="10%">
+      <a href="./links.html">Links</a>
+     </td>
+    </tr>
+   </tbody></table>
+   &nbsp;<br>
+   <table class="content">
+    <tbody><tr>
+     <td align="left">
+<table class="table">
+ <tbody><tr><td>
+  <blockquote>
+
+<div class="Section1">
+<p class="MsoNormal"><font face="Arial"><span class="SpellE"><b><u><span style="font-size:14.0pt">EmulinkerSF</span></u></b></span><b><u><span style="font-size:14.0pt"> v0.90.0+ (03-28-2021) Manual</span></u></b></span></font></p>
+<br>                     
+</font></p>
+<p class="MsoNormal"><font face="Arial"><b><u>Server Access Level Privileges</u></b></font></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="691" style="width:7.2in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="247" valign="top" style="width:185.4pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><b><u><span style="font-size:11.0pt">Elevated Status (E)</span></u></b></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Bypass <span class="SpellE">Bot</span>
+  Triggers</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Login When Server is Full</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Join Playing Games</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Gets Login Message</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+  </td>
+  <td width="444" valign="top" style="width:333.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><b><u><span style="font-size:11.0pt">Admin Status (A)</span></u></b></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Includes (E) and (M)&nbsp; [can
+  silence users indefinitely]</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Ban <st1:city w:st="on"><st1:place w:st="on">Normal</st1:place></st1:city> or (E) or (M) Users from Server</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Kick <st1:city w:st="on"><st1:place w:st="on">Normal</st1:place></st1:city> or (E) or (M) Users from Games</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Close Games</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Stealth Mode</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Make Announcements</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Join Games without being
+  noticed (stealth)</span></font></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+  <td width="247" valign="top" style="width:185.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><b><u><span style="font-size:11.0pt">Moderator Status (M)</span></u></b></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Includes (E)</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Silence Normal Users up to
+  15min</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Kick <st1:place w:st="on">Normal</st1:place>
+  Users from Server</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+  </td>
+  <td width="444" valign="top" style="width:333.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><b><u><span style="font-size:11.0pt">Super Admin Status
+  (SA)</span></u></b></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Includes (E), (M), and (A)</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Grant Temp Admin</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Grant Temp Moderator</span></font></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Grant Temp Elevated</span></font></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt"><font face="Arial">Can use <span class="SpellE">EmulinkerSF</span>
+  Admin Client</font><o:p></o:p></span></p>
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Has Power over everyone…even
+  (SA)’s</span></font></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<font face="Arial">
+
+
+</font>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><b><u>Game Input Delay</u></b></font></p>
+
+<p class="MsoNormal"><font face="Arial">Unlike the original Emulinker, 
+EmulinkerSF allows users to play on different delays or the same delay.&nbsp; 
+The server </font></p>
+<p class="MsoNormal"><font face="Arial">default is different delays.&nbsp; If 
+Player 1 has a ping of 33 on a Excellent Connection and Player 2 has a ping of 
+67 on</font></p>
+<p class="MsoNormal"><font face="Arial">a Excellent Connection, Player 1 will 
+play at 1 (3 frame delay) and Player 2 will play at a 3 (7 frame delay).&nbsp;
+</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial">If you or your opponent want to play on 
+the same delay, the owner can toggle between delay modes with the</font></p>
+<p class="MsoNormal"><font face="Arial">command: "/samedelay true" to play with 
+the same delay and "/samedelay false" to play with different delays.&nbsp; If 
+the</font></p>
+<p class="MsoNormal"><font face="Arial">owner chooses to play with the same 
+delay, both opponents will be playing with the delay of the user with the worst</font></p>
+<p class="MsoNormal"><font face="Arial">ping.&nbsp; So in my example above, both 
+players would be playing on 3 (7 frame delay).</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font face="Arial">Obviously if both you and your opponent 
+fall in the same ping range, you have nothing to worry about.&nbsp; </font></p>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Common Ping Ranges/Connection
+Type Thresholds</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><span class="SpellE"><span class="GramE"><span style="font-size:
+11.0pt">Lan</span></span></span><span style="font-size:11.0pt"> Connection</span></font></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="667" style="width:6.95in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><st1:place w:st="on"><span style="font-size:11.0pt">Ping</span></st1:place><span style="font-size:11.0pt"> </span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">0 to 16 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">17 to 33 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">34 to 49 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">50 to 66 ms</span></font></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Delay Value</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">1 (1 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">2 (2 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">3 (3 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">4 (4 frame delay)</span></font></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Excellent Connection</span></font></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="667" style="width:6.95in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><st1:place w:st="on"><span style="font-size:11.0pt">Ping</span></st1:place><span style="font-size:11.0pt"> </span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">0 to 33 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">34 to 66 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">67 to 99 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">100 to 133 ms</span></font></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Delay Value</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">1 (3 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">2 (5 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">3 (7 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">4 (9 frame delay)</span></font></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Good Connection</span></font></p>
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="667" style="width:6.95in;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><st1:place w:st="on"><span style="font-size:11.0pt">Ping</span></st1:place><span style="font-size:11.0pt"> </span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">0 to 49 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">50 to 99 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">100 to 150 ms</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">151 to 199 ms</span></font></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes">
+  <td width="133" valign="top" style="width:100.05pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">Delay Value</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">1 (5 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">2 (8 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">3 (11 frame delay)</span></font></p>
+  </td>
+  <td width="133" valign="top" style="width:100.1pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">4 (14 frame delay)</span></font></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><b><u>Hacker Prevention</u></b></font></p>
+
+<ol style="margin-top:0in" start="1" type="1">
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Username Forging (change username while logged
+     in)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Server Hammering (hogs up all ports)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Username Length &gt; 31 (crashes all traditional <span class="SpellE">kaillera</span> clients)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span class="SpellE"><span style="font-size:11.0pt">Gamename</span></span><span style="font-size:11.0pt"> Length &gt;128 (crashes all traditional <span class="SpellE">kaillera</span> clients)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">PM Length &gt; 320 (crashes all traditional <span class="SpellE">kaillera</span> clients)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span class="SpellE"><span style="font-size:11.0pt">Gameroom</span></span><span style="font-size:11.0pt"> Join Spamming</span></font></li>
+ <li class="MsoNormal" style="mso-list:l0 level1 lfo1;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Username Duplication</span></font></li>
+</ol>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt">&nbsp;</span></font></p>
+
+<p class="MsoNormal"><font face="Arial"><b><u>Server Fixes</u></b></font></p>
+
+<ol style="margin-top:0in" start="1" type="1">
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Input Ghosting (buttons seem to press on their
+     own)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">White Screen Login (about 95% better)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Casting Error when <span class="SpellE">gameID</span>
+     becomes larger than 0x7FFF (crashes server)</span></font></li>
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Connection break when server get <span class="SpellE">last message ID 0xFFFF</span>
+     from client</span></font></li>
+ <li class="MsoNormal" style="mso-list:l1 level1 lfo2;tab-stops:list .5in">
+	<font face="Arial"><span style="font-size:11.0pt">Unlikely but possible connection break 
+due of loss or disorder packets</span></font></li>
+</ol>
+
+<p class="MsoNormal"><font face="Arial"><span style="font-size:11.0pt"><br>
+&nbsp;</span></font></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><b>
+<span style="font-size: 20.0pt; font-family: Arial">EmulinkerSF Chat/Gameroom 
+Commands</span></b></p>
+<p class="MsoNormal" align="center" style="text-align:center"><b>
+<span style="font-family: Arial">&nbsp;&nbsp;</span></b></p>
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse: collapse; border: medium none" id="table1">
+	<tbody><tr>
+		<td width="319" valign="top" style="width: 239.4pt; border: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center"><b>
+		<span style="font-size: 14.0pt; font-family: Arial">Command</span></b></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: 1.0pt solid windowtext; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center"><b>
+		<span style="font-size: 14.0pt; font-family: Arial">Function</span></b></p></td>
+	</tr>
+	<tr>
+		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center">
+		<span style="font-family: Arial">General Commands</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/help</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Brings up the 
+		command.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/finduser 
+		&lt;username&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a user to 
+		find in what game another user is in and that user’s ID.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/me &lt;message&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows the user 
+		to “emote”.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/unignore &lt;User 
+		ID&gt; /unignore &lt;User ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a user to 
+		ignore or unignore another user.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/msg &lt;User ID&gt; /msgoff, /msgon</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a user to 
+		send a private message to another user in the server.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/myip</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a user to 
+		see what his/her IP address is.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/version</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a user to 
+		find what version of the server he/she is currently in.</span></p></td>
+	</tr>
+	<tr>
+		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center">
+		<span style="font-family: Arial">Moderator Exclusive Commands</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/kick &lt;userID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a 
+		moderator to kick another user of equal or less status from the server.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/silence 0 - 15</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a 
+		moderator to silence another user of equal or less status for 0-15 
+		minutes.</span></p></td>
+	</tr>
+	<tr>
+		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center">
+		<span style="font-family: Arial">Admin Exclusive Commands*</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/ban 0 - 30000</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to ban a user of less status for 0 to 30000 minutes.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/silence 0 – 
+		30000</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to silence a user of less status for 0 to 30000 minutes.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/closegame &lt;Game 
+		ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to close any game that has been hosted.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/announce, 
+		/announceall, /announcegame &lt;Game ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to announce messages via the server to chat, every game and chat, or to 
+		one exclusive game respectively.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/findgame &lt;Game 
+		Name&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to find the Game ID of any hosted game.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/stealthon, 
+		/stealthoff</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to join a game unnoticed.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/clear &lt;User IP&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows an admin 
+		to clear banning, silencing, etc. done by himself/herself or another 
+		admin.</span></p></td>
+	</tr>
+	<tr>
+		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center">
+		<span style="font-family: Arial">Super Admin Exclusive Commands**</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/tempelevated 
+		&lt;User ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a super 
+		admin to grant temporary elevated status to another user.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/tempmoderator 
+		&lt;User ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a super 
+		admin to grant temporary moderator status to another user.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/tempadmin &lt;User 
+		ID&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows a super 
+		admin to grant temporary admin status to another user.</span></p></td>
+	</tr>
+	<tr>
+		<td width="638" colspan="2" valign="top" style="width: 6.65in; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal" align="center" style="text-align:center">
+		<span style="font-family: Arial">Gameroom Owner Commands</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/detectautofire 1 
+		– 5</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows the host 
+		of a game to set autofire sensitivity.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/maxusers &lt;# of 
+		users&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows the host 
+		of a game to set the maximum amount of users allowed in the game at one 
+		time.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/maxping &lt;#&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows the host 
+		of a game to set the highest ping allowed to enter the game.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/samedelay true | 
+		false</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Allows the host 
+		to set game delay.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/start, /startn 
+		&lt;#&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">The game will 
+		start when a certain amount of users join.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/mute, /unmute, /muteall, 
+		/unmuteall</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Stops users from 
+		typing in-game.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/p2pon, /p2poff</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Ignoring ALL server activity  
+		during gamplay. (Main chat and server messages will be disabled)</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/setemu</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Restricts the 
+		gameroom to the emulator the host is using.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/setconn</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Restricts the 
+		gameroom to the connection type the host is using.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/lagstat, /lagreset</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Shows the amount 
+		of lag spikes each user in the gameroom has.</span></p></td>
+	</tr>
+	<tr>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: 1.0pt solid windowtext; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">/swap &lt;####&gt;</span></p></td>
+		<td width="319" valign="top" style="width: 239.4pt; border-left: medium none; border-right: 1.0pt solid windowtext; border-top: medium none; border-bottom: 1.0pt solid windowtext; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0in; padding-bottom: 0in">
+		<p class="MsoNormal"><span style="font-family: Arial">Swaps the keys 
+		for each user in the gameroom.</span></p></td>
+	</tr>
+</tbody></table>
+<p class="MsoNormal" style="margin-left:.25in">
+<span style="font-family: Arial">*Admin can mute/unmute people when in a game 
+hosted by someone else.</span></p>
+<p class="MsoNormal" style="margin-left:.25in">
+<span style="font-family: Arial">** Super Admin can do all gameroom commands 
+when in a game hosted by someone else.</span></p>
+</div>
+  </blockquote>
+ </td></tr>
+</tbody></table>
+&nbsp;
+      <br>
+     </td>
+    </tr>
+   </tbody></table>
+   <table class="footer">
+     <tbody><tr><td align="center">
+      © 2019 - 2023 God Weapon
+     </td>
+    </tr>
+   </tbody></table>
+   <table class="footer">
+   </table>
+   &nbsp;
+  </center>
+</body></html>
